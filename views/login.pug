@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title 17.6. Szablony HTML
+		link(rel='stylesheet', href='style.css') 
+	body
+		h1 Google 
+		form(action="http://localhost:3000/auth/google", method="GET")
+			label Username
+			input(type="text", name="username")
+			label Password
+			input(type="password", name="password")
+			input(type="submit", value="Log in")
