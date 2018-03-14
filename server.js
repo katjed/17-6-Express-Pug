@@ -38,11 +38,11 @@ app.set('views', './views');
 app.use(express.static('css'))
 
 app.get('/', function(req, res) {
-    res.render('login');
+    res.render('index');
 });
 
 app.get('/auth/google', function(req, res) {
-    res.render('welcome');
+    res.render('logged');
 });
 
 app.listen(3000);
